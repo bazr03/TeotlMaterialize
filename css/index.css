@@ -1,0 +1,147 @@
+.service-selection-title {
+  margin: 90px 0 50px 0;
+}
+.services-margin {
+  margin: 0.5rem 0;
+}
+.services-nota {
+  margin: 1rem 0;
+}
+.navbar-logo {
+  width: 90px;
+  height: 100%;
+  padding: 0.1rem;
+}
+h2 {
+  text-transform: uppercase;
+  line-height: 75px;
+}
+.margin2rem {
+  margin: 2rem 0;
+}
+.margin4rem {
+  margin: 4rem 0;
+}
+#solicitaCotizacion {
+  background-image: url("../images/logo/Isotipo-blanco-teotl-SemiTransparent17.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding: 4rem 0;
+}
+.parallax-container {
+  height: 600px;
+}
+.parallax {
+  position: relative;
+}
+.parallax::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 45, 45, 0.5);
+}
+
+/* -------------------------------
+-------Servicios ----------------
+*/
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 30px;
+  background-image: url("../images/logo/Caracol-gris-teotl.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  grid-template-areas:
+    " uno uno uno uno uno uno uno uno uno uno . ."
+    " . . dos dos dos dos dos dos dos dos dos dos"
+    " tres tres tres tres tres tres tres tres tres tres . ."
+    " . . cuatro cuatro cuatro cuatro cuatro cuatro cuatro cuatro cuatro cuatro"
+    " cinco cinco cinco cinco cinco cinco cinco cinco cinco cinco . ."
+    " . . seis seis seis seis seis seis seis seis seis seis";
+  /* @include media-min-width(map-get($devices, laptop)){
+        grid-template-areas:" . uno uno uno uno uno dos dos dos dos dos ." 
+                            " . uno uno uno uno uno dos dos dos dos dos ." 
+                            " . tres tres tres tres tres cuatro cuatro cuatro cuatro cuatro ."
+                            " . tres tres tres tres tres cuatro cuatro cuatro cuatro cuatro ."
+                            " . cinco cinco cinco cinco cinco seis seis seis seis seis ."
+                            " . cinco cinco cinco cinco cinco seis seis seis seis seis .";
+    }; */
+}
+
+@media (min-width: 700px) {
+  .servicios {
+    grid-template-areas:
+      " . uno uno uno uno uno dos dos dos dos dos ."
+      " . uno uno uno uno uno dos dos dos dos dos ."
+      " . tres tres tres tres tres cuatro cuatro cuatro cuatro cuatro ."
+      " . tres tres tres tres tres cuatro cuatro cuatro cuatro cuatro ."
+      " . cinco cinco cinco cinco cinco seis seis seis seis seis ."
+      " . cinco cinco cinco cinco cinco seis seis seis seis seis .";
+  }
+}
+
+.servicio1,
+.servicio2,
+.servicio3,
+.servicio4,
+.servicio5,
+.servicio6 {
+  width: 100%;
+  /*height: 200px;
+    border: 1px solid red;*/
+  background-color: rgba(45, 45, 45, 0.6);
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.servicio1 {
+  grid-area: uno;
+}
+.servicio2 {
+  grid-area: dos;
+}
+.servicio3 {
+  grid-area: tres;
+}
+.servicio4 {
+  grid-area: cuatro;
+}
+.servicio5 {
+  grid-area: cinco;
+}
+.servicio6 {
+  grid-area: seis;
+}
+/* -------------------------------
+-------BANNER ----------------
+*/
+.home_banner {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "lft lft rght";
+  align-items: center;
+  justify-items: center;
+}
+.home_banner--duda {
+  grid-area: lft;
+}
+.home_banner--info {
+  grid-area: rght;
+}
+.home_banner--duda h5 {
+  line-height: 65px;
+  font-size: 3rem;
+}
+.home_banner--info p {
+  text-align: center;
+  font-size: 1.3rem;
+}
