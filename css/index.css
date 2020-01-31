@@ -126,10 +126,19 @@ h2 {
   height: 600px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "lft lft rght";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "lft lft lft"
+    "rght rght rght";
   align-items: center;
   justify-items: center;
+}
+@media (min-width: 700px) {
+  .home_banner {
+    grid-template-areas:
+      "lft lft rght"
+      "lft lft rght";
+  }
 }
 .home_banner--duda {
   grid-area: lft;
@@ -144,4 +153,47 @@ h2 {
 .home_banner--info p {
   text-align: center;
   font-size: 1.3rem;
+}
+/* -------------------------------
+-------NUESTR EQUIPO ----------------
+*/
+/* .card-image {
+  position: relative;
+}
+#nuestroEquipo .card-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 45, 45, 0.2);
+}
+
+#nuestroEquipo .card-title {
+  z-index: 10;
+  background-color: rgba(45, 45, 45, 0.5);
+} */
+
+.card-set__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-between;
+  border: 1px solid blue;
+}
+.card-wrapper {
+  padding: 20px;
+  flex: 1 1 0px;
+  border: 1px solid red;
+  min-width: 450px;
+  min-height: 450px;
+}
+.card-container {
+  background-color: blue;
+  padding: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
 }
