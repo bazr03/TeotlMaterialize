@@ -6,6 +6,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link href="css/normalize.css" rel="stylesheet" />
     <!--Import materialize.css-->
     <link
       type="text/css"
@@ -13,6 +14,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
       media="screen,projection"
     />
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto|Rubik&display=swap" rel="stylesheet">
     <link
       type="text/css"
       rel="stylesheet"
@@ -20,8 +23,12 @@
       media="screen,projection"
     />
 
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/40cfc3ee2b.js" crossorigin="anonymous"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta nema="keywords" content="Geología, geofísica, riegos geológicos, estudios de impacto vial, estudios de impacto ambiental" />
+    <meta name="description" content="Consultoría geológica y geofísica, nuestros servicios incluyen: Estabilidad de Talud, estudio de riesgo geológico, riesgo hidrológico, impacto vial y ambiental, así como estudios geofísicos." />
     <title>Teotl Consultores</title>
   </head>
 
@@ -34,7 +41,7 @@
             <a href="/index.html" class="brand-logo"
               ><img class=" navbar-logo" src="images/logo/LOGO-TEOTL.png"
             /></a>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"
+            <a href="/" data-target="slide-out" class="sidenav-trigger"
               ><i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
@@ -78,7 +85,7 @@
       <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
     </ul>
 
-    <div class="parallax-container z-depth-3">
+    <!-- <div class="parallax-container z-depth-3">
       <div class="parallax">
         <img src="images/home/panorama-Monterrey-NL-OPT.jpg" />
       </div>
@@ -94,7 +101,34 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <section>
+      <div class="heroHome">
+        <div class="heroHome__title white-text">
+            <h1 class="header"><b>Geociencias e Ingeniería Aplicada</b></h1>
+            <p class="flow-text">Todos nuestros estudios cumplen con el Reglamento establecido por la
+              Secretaria de Desarrollo Urbano y Ecológico de cada Dependencia (SEDUE).</p>
+        </div>
+
+        <div class="heroHome__info white-text" >
+          <span ><b>+52 (81) 1297 8327 </b><i class="material-icons  orange-text text-lighten-1"
+            >phone_forwarded</i
+          ></span>
+          <span ><b>Servicios</b> <i class="material-icons prefix orange-text text-lighten-1"
+            >business_center</i
+          ></span>
+          <span ><b>info@teotl-consultores.com.mx </b><i class="material-icons prefix orange-text text-lighten-1"
+            >email</i
+          ></p>
+        </div>
+        <div class="heroHome__cotiza white-text">
+          <span class="heroHome__cotiza-title" >Cotiza tu proyecto</span>
+          <span class="heroHome__cotiza-respuesta">Respuesta en menos de 24 horas!</span>
+        </div>
+
+      </div>
+    </section>
     <!--Seccion : Cotiza tu proyecto-->
     <section class="section grey darken-3" id="solicitaCotizacion">
       <div class="container">
@@ -268,7 +302,7 @@
                     class="materialize-textarea"
                   ></textarea>
                   <label for="icon_prefix2"
-                    >Comparte con nosotros el contexto, objetivos y detalles
+                    >Contexto, objetivos y detalles
                     relevantes de tu proyecto</label
                   >
                 </div>
@@ -368,28 +402,26 @@
         </div>
         <div class="servicio5">
           <div class="servicio center">
-            <i class="material-icons prefix orange-text text-lighten-1"
-              >mode_edit</i
+            <i class="material-icons prefix large orange-text text-lighten-1"
+              >timelapse</i
             >
             <div class="content">
-              <h5 class="orange-text">Etica Profesional</h5>
+              <h5 class="orange-text">Cotizaciones al Instante</h5>
               <p class="white-text">
-                Capital humano capacitado y comprometido a una constante mejora
-                personal y profesional.
+                Cotización en menos de 24 horas!.
               </p>
             </div>
           </div>
         </div>
         <div class="servicio6">
           <div class="servicio center">
-            <i class="material-icons prefix orange-text text-lighten-1"
-              >mode_edit</i
+            <i class="material-icons prefix large orange-text text-lighten-1"
+              >laptop_mac</i
             >
             <div class="content">
-              <h5 class="orange-text">Etica Profesional</h5>
+              <h5 class="orange-text">Tecnología de Vanguardia</h5>
               <p class="white-text">
-                Capital humano capacitado y comprometido a una constante mejora
-                personal y profesional.
+                Hardware y software de ultima generación.
               </p>
             </div>
           </div>
@@ -489,7 +521,8 @@
           </div>
           <div class="card-grid__team-member card7">
             <div class="card-grid__team-member-image z-depth-3">
-              <img src="images/NuestroEquipo/850/Ivan-Bazaldua-850x850px.jpg" />
+              <img 
+                  src="images/NuestroEquipo/850/Ivan-Bazaldua-850x850px.jpg"/>
               <div class="card-grid__team-member-title white-text">
                 <h5>Iván Bazaldúa</h5>
                 <p>Ingeniero Geofísico</p>
@@ -523,7 +556,8 @@
                 ><img src="images/nuestrosClientes/CIMEPYAE.png"
               /></a>
               <a class="carousel-item" href="#five!"
-                ><img src="images/nuestrosClientes/ENERGEX.png"
+                ><img src="images/nuestrosClientes/ENERGEX.png "
+                  
               /></a>
             </div>
           </div>
@@ -537,30 +571,42 @@
         <div class="container-grid">
           <div class="footer-grid__left">
             <h5>Con <span>Téotl</span>, <br> <span>seguro</span> construyes </h5>
-            <img src="images/logo/LogoTeotl.svg" >
+            <div class="footer-logo" >
+              <img src="images/logo/LogoTeotl.svg" >
+            </div>
           </div>
-          <div class="footer-grid__center">
+          <div class="footer-grid__center center">
             <h5>Contactanos</h5>
             <p>Garcia, N.L., México</p>
-            <p>Tel: </p>
+            <p>Tel: +52 (81) 1297 - 8327</p>
             <p>info@teotl-consultores.com.mx</p>
+            <div class="social-icons">
+              <a href="#" class="facebook-icon" ><i class="fab fa-facebook-square"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
           </div>
-          <div class="footer-grid__right">
-            <h5>Link</h5>
+          <div class="footer-grid__right center">
+            <h5>Links</h5>
             <ul>
-              <li>Link 1</li>
-              <li>Link 1</li>
-              <li>Link 1</li>
-              <li>Link 1</li>
-              <li>Link 1</li>
+              <li><a href="#" >Estudios de Riesgos Geológicos</a></li>
+              <li><a href="#" >Estudios Geofísicos</a></li>
+              <li><a href="#" >Estudios de Impacto Vial</a></li>
+              <li><a href="#" >Estudios de Impacto Ambiental</a></li>
+              <li><a href="#" >Estudioss de Estabilidad de Talud</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-copyright grey darken-2">
         <div class="container">
-        © 2014 - <span id="currentYear" ></span> || Todos los derechos reservados
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          <div class="row" >
+            <div class="col s12 m6 center" >
+              © 2014 - <span id="currentYear" ></span> | Téotl Consultores | Todos los derechos reservados
+            </div>
+            <div class="col s12 m6 center">
+              <a class="grey-text text-lighten-4 right" href="#!">Políticas de Privacidad</a>
+            </div>
+          </div>        
         </div>
       </div>
     </footer
