@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // sideNav
   const sidenav = document.querySelector(".sidenav");
-  M.Sidenav.init(sidenav, {});
+  M.Sidenav.init(sidenav, {
+    draggable: true,
+    preventScrolling: true
+  });
 
   // Parallac
   const parallax = document.querySelectorAll(".parallax");
@@ -18,10 +21,21 @@ document.addEventListener("DOMContentLoaded", function() {
   const carousel = document.querySelectorAll(".carousel");
   M.Carousel.init(carousel, {
     duration: 200,
-    padding: 20,
+    padding: 200,
     indicators: true,
-    shift: 3
+    shift: 3,
+    onCycleTo: 2000
   });
+
+  console.log(carousel);
+  var instance = M.Carousel.getInstance(carousel);
+  console.log(instance);
+  //autoplay(instance);
+  // function autoplay(INST) {
+  //   //
+  //   INST.next();
+  //   setTimeout(autoplay, 4500);
+  // }
   // Slider
   // const slider = document.querySelector(".slider");
   // M.Slider.init(slider, {
@@ -30,4 +44,10 @@ document.addEventListener("DOMContentLoaded", function() {
   //   transition: 500,
   //   interval: 6000
   // });
+  // autoplay(carousel);
+
+  // function autoplay(CSRS) {
+  //   CSRS.carousel("next");
+  //   setTimeout(autoplay, 4500);
+  // }
 });

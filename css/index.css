@@ -12,30 +12,6 @@
   height: 100%;
   padding: 0.1rem;
 }
-img {
-  width: 100%;
-  height: auto;
-}
-h1 {
-  line-height: 80px;
-  letter-spacing: 3px;
-  font-family: rubik, "Helvetica Neue", sans-serif;
-  text-shadow: 1px 1px 1px #000;
-}
-h2 {
-  text-transform: uppercase;
-  line-height: 75px;
-  letter-spacing: 4px;
-  font-family: Nunito, "Helvetica Neue", sans-serif;
-  font-weight: 700;
-  text-shadow: 1px 1px 1px #000;
-}
-h5 {
-  text-shadow: 1px 1px 1px #000;
-}
-p {
-  font-family: roboto, "Helvetica Neue", sans-serif;
-}
 .margin2rem {
   margin: 2rem 0;
 }
@@ -49,26 +25,7 @@ p {
   background-position: right center;
   padding: 4rem 0;
 }
-.parallax-container {
-  height: 600px;
-}
-.parallax {
-  position: relative;
-}
-.parallax::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(45, 45, 45, 0.4);
-}
-.backdrop {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(45, 45, 45, 0.9);
-}
+
 /* -------------------------------
 -------Hero Home ----------------
 */
@@ -101,21 +58,32 @@ p {
 }
 .heroHome__info {
   grid-area: hhi;
+  background-color: rgba(247, 128, 52, 0.9);
+}
+.heroHome__info ul {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  background-color: rgba(247, 128, 52, 0.9);
+  /* align-items: center; */
+}
+.heroHome__info ul li i {
+  color: rgba(246, 15, 62, 0.9);
+  padding: 0.5rem;
+}
+.heroHome__info ul li,
+.heroHome__cotiza span {
+  text-shadow: 1px 1px 1px #000;
+  letter-spacing: 2px;
 }
 .heroHome__cotiza {
   grid-area: hhc;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(246, 15, 62, 0.9);
+  background-color: rgba(246, 15, 62, 0.8);
 }
 .heroHome__cotiza .heroHome__cotiza-title {
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 @media (min-width: 950px) {
   .heroHome {
@@ -150,14 +118,6 @@ p {
     " . . cuatro cuatro cuatro cuatro cuatro cuatro cuatro cuatro cuatro cuatro"
     " cinco cinco cinco cinco cinco cinco cinco cinco cinco cinco . ."
     " . . seis seis seis seis seis seis seis seis seis seis";
-  /* @include media-min-width(map-get($devices, laptop)){
-        grid-template-areas:" . uno uno uno uno uno dos dos dos dos dos ." 
-                            " . uno uno uno uno uno dos dos dos dos dos ." 
-                            " . tres tres tres tres tres cuatro cuatro cuatro cuatro cuatro ."
-                            " . tres tres tres tres tres cuatro cuatro cuatro cuatro cuatro ."
-                            " . cinco cinco cinco cinco cinco seis seis seis seis seis ."
-                            " . cinco cinco cinco cinco cinco seis seis seis seis seis .";
-    }; */
 }
 
 @media (min-width: 700px) {
@@ -244,6 +204,15 @@ p {
 /* -------------------------------
 -------NUESTR EQUIPO ----------------
 */
+#nuestroEquipo h2 {
+  padding: 2rem 0;
+}
+#nuestroEquipo .card-grid__team-member {
+  transition: 0.5s ease-in-out;
+}
+#nuestroEquipo .card-grid__team-member:hover {
+  transform: scale(1.05);
+}
 .card-set__wrapper {
   display: -webkit-box;
   display: flex;
@@ -437,4 +406,10 @@ p {
 }
 .footer-grid__center .social-icons .facebook-icon {
   color: #3b5998 !important;
+}
+.footer-copyright__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }

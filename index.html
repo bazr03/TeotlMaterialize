@@ -16,6 +16,13 @@
     />
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto|Rubik&display=swap" rel="stylesheet">
+    <!--Mi Css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/main.css"
+      media="screen,projection"
+    />
     <link
       type="text/css"
       rel="stylesheet"
@@ -40,11 +47,11 @@
           <div class="container">
             <a href="/index.html" class="brand-logo"
               ><img class=" navbar-logo" src="images/logo/LOGO-TEOTL.png"
-            /></a>
+            alt="logo-Téotl."/></a>
             <a href="/" data-target="slide-out" class="sidenav-trigger"
               ><i class="material-icons">menu</i>
             </a>
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down" role="navigation" aria-label="Main">
               <li class="active"><a href="/index.html">Inicio</a></li>
               <li><a href="#">Quienes Somos</a></li>
               <li><a href="#">Servicios</a></li>
@@ -55,18 +62,18 @@
       </nav>
     </div>
     <!--Mobil Nav-->
-    <ul id="slide-out" class="sidenav light-blue">
+    <ul id="slide-out" class="sidenav deep-orange" role="navigation" aria-label="mobile menu">
       <li>
         <div class="user-view">
           <div class="background">
-            <img src="images/logo/LogoTeotl.svg" />
+            <img src="images/black-1072366_640.jpg" />
           </div>
           <a href="#user"
-            ><img class="circle" src="images/logo/iconoTeotl.png"
+            ><img class="Mobile-logo" src="images/logo/LogoTeotl.svg"
           /></a>
           <a href="/"
             ><span class="white-text name"
-              >Consultoria Geológica y Geofísica</span
+              >Consultoría Geológica y Geofísica</span
             ></a
           >
           <a href="#email"
@@ -74,15 +81,17 @@
               >info@teotl-consultores.com.mx</span
             ></a
           >
-        </div>
+        </div><!--user-view-->
       </li>
-      <li>
-        <a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a>
+      <li >
+        <a href="#!" class="white-text" ><i class="material-icons white-text">account_box</i>Quienes Somos</a>
       </li>
-      <li><a href="#!">Second Link</a></li>
+      <li><a href="#!" class="white-text"><i class="material-icons white-text">explore</i>Nuestra Motivación</a></li>
       <li><div class="divider"></div></li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      <li><a class="subheader">Menu</a></li>
+      <li><a class="waves-effect white-text" href="#!">Inicio</a></li>
+      <li><a class="waves-effect white-text" href="#!">Servicios</a></li>
+      <li><a class="waves-effect white-text" href="#!">Contacto</a></li>
     </ul>
 
     <!-- <div class="parallax-container z-depth-3">
@@ -104,7 +113,7 @@
     </div> -->
 
     <section>
-      <div class="heroHome">
+      <div class="heroHome" role="banner" >
         <div class="heroHome__title white-text">
             <h1 class="header"><b>Geociencias e Ingeniería Aplicada</b></h1>
             <p class="flow-text">Todos nuestros estudios cumplen con el Reglamento establecido por la
@@ -112,15 +121,30 @@
         </div>
 
         <div class="heroHome__info white-text" >
-          <span ><b>+52 (81) 1297 8327 </b><i class="material-icons  orange-text text-lighten-1"
-            >phone_forwarded</i
-          ></span>
+          <ul>
+            <li>
+                <i class="material-icons  ">phone_forwarded</i>
+                +52 (81) 1297 8327 </li>
+            <li>
+                <i class="material-icons prefix ">business_center</i>
+                Servicios
+            </li>
+            <li>
+                <i class="material-icons prefix ">email</i>
+                info@teotl-consultores.com.mx
+            </li>
+          </ul>
+          <!-- <span >
+            <i class="material-icons  orange-text text-lighten-1"
+            >phone_forwarded</i>
+              <b>+52 (81) 1297 8327 </b>
+          </span>
           <span ><b>Servicios</b> <i class="material-icons prefix orange-text text-lighten-1"
             >business_center</i
           ></span>
           <span ><b>info@teotl-consultores.com.mx </b><i class="material-icons prefix orange-text text-lighten-1"
             >email</i
-          ></p>
+          ></p> -->
         </div>
         <div class="heroHome__cotiza white-text">
           <span class="heroHome__cotiza-title" >Cotiza tu proyecto</span>
@@ -129,18 +153,19 @@
 
       </div>
     </section>
+    <main role="main">
     <!--Seccion : Cotiza tu proyecto-->
     <section class="section grey darken-3" id="solicitaCotizacion">
       <div class="container">
         <h2 class="center white-text">¡Solicita ahora tu cotización!</h2>
         <div class="row">
-          <form class="col s12 ">
+          <form class="col s12 " role="form">
             <div class="row">
               <div class="input-field col s12 m4">
                 <i class="material-icons prefix orange-text text-lighten-1"
                   >account_circle</i
                 >
-                <input id="icon_prefix" type="text" class="validate" />
+                <input id="icon_prefix" type="text" class="validate " />
                 <label for="icon_prefix">Nombre</label>
               </div>
               <div class="input-field col s12 m4">
@@ -564,7 +589,7 @@
         </div>
       </div>
     </section>
-
+  </main>
     <!--Footer-->
     <footer class="page-footer grey darken-4">
       <div class="container ">
@@ -599,19 +624,18 @@
       </div>
       <div class="footer-copyright grey darken-2">
         <div class="container">
-          <div class="row" >
-            <div class="col s12 m6 center" >
+          <div class="footer-copyright__content" >
+            <div >
               © 2014 - <span id="currentYear" ></span> | Téotl Consultores | Todos los derechos reservados
             </div>
-            <div class="col s12 m6 center">
+            <div >
               <a class="grey-text text-lighten-4 right" href="#!">Políticas de Privacidad</a>
             </div>
           </div>        
-        </div>
+        </div><!--container-->
       </div>
     </footer
 
-    <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
